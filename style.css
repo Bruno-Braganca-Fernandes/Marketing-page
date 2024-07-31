@@ -114,3 +114,36 @@ img {
     border-radius: 10px;
     margin: 25px 0;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+
+.wrapper img {
+    background-color: #fff;
+    width: fit-content;
+    height: 20vh;
+    padding: 0px;
+    margin-left: 20px;
+    margin: 20px;
+}
+
+.wrapper div {
+    background-color: #F0EEEA;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.wrapper div h3 {
+    margin: 0px 0px 20px 20px;
+    font-size: 22px;
+    color: #233831;
+}
+
+.wrapper div p {
+    margin: 0px 0px 50px 20px;
+    color: gray;
+    line-height: 30px;
+    width: 80%;
+}
