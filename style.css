@@ -8,6 +8,9 @@
 
 header {
     padding: 25px 0;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
     box-shadow: 1em 0.5em 1em #e4e9f1;
 }
 
@@ -23,6 +26,7 @@ header nav li a {
 
 .special-button {
     font-weight: bold;
+    border: none;
     padding: 17px 20px;
     background-color: #233831;
     color: #fff;
@@ -79,7 +83,7 @@ main {
 
 .content h2+p,
 .content p {
-    color: gray;
+    color: #666;
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: 300;
@@ -143,7 +147,91 @@ img {
 
 .wrapper div p {
     margin: 0px 0px 50px 20px;
-    color: gray;
+    color: #666;
     line-height: 30px;
     width: 80%;
+}
+
+#clients {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #F0EEEA;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+#clients .content {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#clients p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 80%;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#clients h6 {
+    background-color: #fff;
+}
+
+#clients .special-button {
+    padding: 15px 25px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.sticky-content {
+    position: sticky;
+    top: 100px;
+}
+
+#clients .reviews {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.reviewer-photo {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    border: 3px solid #F0EEEA;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewer-name {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 15px;
 }
