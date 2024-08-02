@@ -7,7 +7,7 @@
 }
 
 header {
-    padding: 25px 0;
+    padding: 35px 0;
     background-color: #fff;
     position: sticky;
     top: 0px;
@@ -27,7 +27,7 @@ header nav li a {
 .special-button {
     font-weight: bold;
     border: none;
-    padding: 17px 20px;
+    padding: 15px 25px;
     background-color: #233831;
     color: #fff;
     border-radius: 10px;
@@ -110,7 +110,8 @@ span {
     box-shadow: 0 0.1em;
 }
 
-img {
+.sessao1 img,
+.sessao2 img {
     width: 85vh;
     height: 75vh;
     background-color: #F0EEEA;
