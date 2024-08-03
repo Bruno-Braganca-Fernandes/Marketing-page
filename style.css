@@ -6,6 +6,10 @@
     font-optical-sizing: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     padding: 35px 0;
     background-color: #fff;
@@ -70,6 +74,7 @@ main {
 .content h2 {
     font-size: 250%;
     margin-bottom: 15px;
+    color: #233831;
 }
 
 .content h6 {
@@ -309,6 +314,10 @@ span {
     background-color: #344841;
 }
 
+#form .content h2 {
+    color: #fff;
+}
+
 .form-container {
     background-color: #fff;
     width: 80%;
@@ -357,11 +366,11 @@ input[type="checkbox"] {
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
-    padding: 40px;
+    padding: 30px;
     border-top: 1px solid #F0EEEA;
-    text-align: center;
+    align-items: center;
 }
 
 footer p {
@@ -374,7 +383,7 @@ footer p {
 
 .footer .policy {
     font-size: 30px;
-    margin-right: 40px;
+    margin-left: 40px;
     color: #233831;
 }
 
@@ -382,4 +391,28 @@ footer p {
     cursor: pointer;
     color: #F18A41;
     transition: 0.4s;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #F89B42;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    color: #F89B42;
+    font-size: 24px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #F89B42;
+    color: #fff;
 }
