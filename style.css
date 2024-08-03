@@ -28,6 +28,12 @@ header nav li a {
     color: #233831;
 }
 
+header nav li a:hover {
+    cursor: pointer;
+    color: #F18A41;
+    transition: 0.4s;
+}
+
 .special-button {
     font-weight: bold;
     border: none;
@@ -35,11 +41,13 @@ header nav li a {
     padding: 15px 25px;
     background-color: #233831;
     color: #fff;
+    transition: 0.3s;
     border-radius: 10px;
 }
 
 .special-button:hover {
     background-color: #F18A41;
+    color: #fff;
 }
 
 .container {
@@ -194,6 +202,7 @@ span {
     padding: 15px 25px;
     margin-top: 15px;
     font-size: 17px;
+    transition: 0.4s;
 }
 
 .left-section {
@@ -276,6 +285,7 @@ span {
     margin-right: 20px;
     background-color: #F18A41;
     color: #fff;
+    transition: 0.4s;
     border-radius: 10px;
 }
 
@@ -287,6 +297,7 @@ span {
     margin-right: 20px;
     background-color: #fff;
     color: #233831;
+    transition: 0.4s;
     border-radius: 10px;
 }
 
