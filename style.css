@@ -27,6 +27,7 @@ header nav li a {
 .special-button {
     font-weight: bold;
     border: none;
+    cursor: pointer;
     padding: 15px 25px;
     background-color: #233831;
     color: #fff;
@@ -50,19 +51,20 @@ main {
     margin: auto;
 }
 
-.sessao1 {
+.section1 {
     display: flex;
     align-items: start;
-    text-align: left;
     justify-content: space-between;
 }
 
-.sessao2 {
+.section2 {
     display: flex;
     flex-direction: row-reverse;
-    align-items: start;
-    text-align: left;
     justify-content: space-between;
+}
+
+.section2 .content {
+    margin-left: 80px;
 }
 
 .content h2 {
@@ -85,8 +87,9 @@ main {
 .content p {
     color: #666;
     margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .content li {
@@ -110,8 +113,8 @@ span {
     box-shadow: 0 0.1em;
 }
 
-.sessao1 img,
-.sessao2 img {
+.section1 img,
+.section2 img {
     width: 85vh;
     height: 75vh;
     background-color: #F0EEEA;
@@ -198,7 +201,7 @@ span {
     top: 100px;
 }
 
-#clients .reviews {
+#clients .right-section {
     flex: 1;
     padding-left: 20px;
 }
@@ -235,4 +238,119 @@ span {
     font-size: 20px;
     width: 50%;
     margin-top: 15px;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 40px;
+    background-color: #233831;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#form h2 {
+    font-size: 50px;
+}
+
+#form .content,
+#form .content p {
+    color: #fff;
+}
+
+#form .content p {
+    line-height: 40px;
+}
+
+#form .special-button2 {
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    margin-right: 20px;
+    background-color: #F18A41;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#form .special-button3 {
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    margin-right: 20px;
+    background-color: #fff;
+    color: #233831;
+    border-radius: 10px;
+}
+
+#form .special-button2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#form .special-button3:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.features li {
+    display: inline;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#form .content h6 {
+    background-color: #344841;
+}
+
+.form-container {
+    background-color: #fff;
+    width: 80%;
+    height: 110%;
+    padding: 45px;
+    border-radius: 10px;
+}
+
+.form-container h1 {
+    font-size: 35px;
+    color: #233831;
+    margin-bottom: 15px;
+}
+
+.form-container p {
+    color: #233831;
+    line-height: 28px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    background-color: #F0EEEA;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #F18A41;
 }
