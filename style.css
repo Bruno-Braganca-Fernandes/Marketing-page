@@ -354,3 +354,32 @@ input[type="checkbox"] {
     margin-right: 10px;
     background-color: #F18A41;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 40px;
+    border-top: 1px solid #F0EEEA;
+    text-align: center;
+}
+
+footer p {
+    color: #666;
+}
+
+.footer .profile {
+    margin-right: 500px;
+}
+
+.footer .policy {
+    font-size: 30px;
+    margin-right: 40px;
+    color: #233831;
+}
+
+.footer .policy:hover {
+    cursor: pointer;
+    color: #F18A41;
+    transition: 0.4s;
+}
