@@ -75,9 +75,11 @@ main {
     justify-content: space-between;
 }
 
-.section2 .content {
-    margin-left: 80px;
+.content {
+    padding: 0 16px;
 }
+
+
 
 .content h2 {
     font-size: 250%;
@@ -128,12 +130,12 @@ span {
 
 .section1 img,
 .section2 img {
-    width: 85vh;
-    height: 75vh;
+    width: 50%;
+    object-fit: cover;
     background-color: #F0EEEA;
     padding: 85px;
     border-radius: 10px;
-    margin: 25px 0;
+    margin: 16px;
 }
 
 .wrapper {
