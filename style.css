@@ -18,6 +18,56 @@ header {
     box-shadow: 1em 0.5em 1em #e4e9f1;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1000;
+    margin-left: auto;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle:hover {
+    background-color: rgba(241, 138, 65, 0.1);
+}
+
+.hamburger-icon {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    width: 24px;
+    height: 2px;
+    background-color: #233831;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active .line-1 {
+    transform: translateY(8px) rotate(45deg);
+    background-color: #F18A41;
+}
+
+.menu-toggle.active .line-2 {
+    opacity: 0;
+}
+
+.menu-toggle.active .line-3 {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #F18A41;
+}
+
 header nav li {
     display: inline;
     margin-right: 18px;
@@ -79,8 +129,6 @@ main {
     padding: 0 16px;
 }
 
-
-
 .content h2 {
     font-size: 250%;
     margin-bottom: 15px;
@@ -112,15 +160,10 @@ main {
     font-size: x-large;
     list-style: none;
     background-image: url(/imagens/check-mark.svg);
-    /* Defina a imagem de fundo */
     background-repeat: no-repeat;
-    /* Evita a repetição da imagem */
     background-size: 16px 16px;
-    /* Ajusta o tamanho da imagem */
     padding-left: 30px;
-    /* Adiciona espaço para a imagem à esquerda do texto */
     background-position: 0 50%;
-    /* Centraliza verticalmente a imagem */
 }
 
 span {
@@ -148,6 +191,7 @@ span {
     width: fit-content;
     height: 20vh;
     padding: 0px;
+    border-radius: 10px;
     margin-left: 20px;
     margin: 20px;
 }
@@ -176,7 +220,6 @@ span {
     justify-content: space-between;
     padding: 40px;
     background-color: #F0EEEA;
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -390,10 +433,6 @@ footer p {
     color: #666;
 }
 
-.footer .profile {
-    margin-right: 500px;
-}
-
 .footer .policy {
     font-size: 30px;
     margin-left: 40px;
@@ -428,4 +467,185 @@ footer p {
 #scrollToTopBtn:hover {
     background-color: #F89B42;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .nav-menu .special-button {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header nav {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .section1,
+    .section2 {
+        flex-direction: column;
+    }
+
+    .section1 img,
+    .section2 img {
+        width: calc(100% - 32px);
+        padding: 40px;
+        margin: 16px auto;
+    }
+
+    .content h2 {
+        font-size: 200%;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #clients {
+        flex-direction: column;
+    }
+
+    #clients .right-section {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .sticky-content {
+        position: static;
+    }
+
+    #form {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    #form h2 {
+        font-size: 36px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 30px auto 0;
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .profile,
+    .footer .policy {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h2 {
+        font-size: 150%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .section1 .content,
+    .section2 .content {
+        min-width: 100%;
+    }
+
+    .section1 img,
+    .section2 img {
+        padding: 20px;
+    }
+
+    #form {
+        padding: 30px 15px;
+    }
+
+    #form h2 {
+        font-size: 28px;
+    }
+
+    .form-container {
+        padding: 25px 15px;
+    }
+
+    .features li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #form .special-button2,
+    #form .special-button3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .reviewer-name {
+        font-size: 16px;
+    }
+
+    .footer .policy {
+        font-size: 20px;
+    }
 }
