@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (response.ok) {
                     alert('Preview garantido! Entraremos em contato.');
                     leadForm.reset();
+                } else if (response.status === 409) {
+                    alert('Esse e-mail já está cadastrado em nossa base. Tente usar outro.');
                 } else {
                     alert('Houve um erro ao enviar seus dados. Tente novamente.');
                 }
